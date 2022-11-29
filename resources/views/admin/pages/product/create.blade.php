@@ -34,19 +34,19 @@
                         <label for="product_image">Upload Image</label>
                         <div class="row">
                             <div class="col-md-3">
-                                <input type="file" class="form-control" name="product_image[]" id="product_image" >
+                                <input type="file" class="form-control" name="product_image[]" >
                             </div>
                             <div class="col-md-3">
-                                <input type="file" class="form-control" name="product_image[]" id="product_image" >
+                                <input type="file" class="form-control" name="product_image[]" >
                             </div>
                             <div class="col-md-3">
-                                <input type="file" class="form-control" name="product_image[]" id="product_image" >
+                                <input type="file" class="form-control" name="product_image[]" >
                             </div>
                             <div class="col-md-3">
-                                <input type="file" class="form-control" name="product_image[]" id="product_image" >
+                                <input type="file" class="form-control" name="product_image[]" >
                             </div>
                             <div class="col-md-3">
-                                <input type="file" class="form-control" name="product_image[]" id="product_image" >
+                                <input type="file" class="form-control" name="product_image[]" >
                             </div>
                         </div>
                     </div>

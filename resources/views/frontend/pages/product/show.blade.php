@@ -3,16 +3,15 @@
 <div class="container mt-4 mb-4">
         <div class="row">
             <div class="col-md-4">
-
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         @php
                             $i=1;
                         @endphp
                         @foreach ($product->image as $image)
-                        <div class="carousel-item {{ $i==1 ? 'active':'' }}">
-                            <img class="d-block w-100" src="{{ asset('images/products/'.$image->image) }}" alt="First slide">
-                          </div>
+                            <div class="carousel-item {{ $i==1 ? 'active':'' }}">
+                                <img class="d-block w-100" src="{{ asset('images/products/'.$image->image) }}" alt="First slide">
+                            </div>
                           @php
                               $i++ ;
                           @endphp

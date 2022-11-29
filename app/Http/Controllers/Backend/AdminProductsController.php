@@ -22,8 +22,6 @@ class AdminProductsController extends Controller
         return view('admin.pages.product.create');
     }
     public function store(Request $request){
-
-
         $request->validate([
             'title'       => 'required|max:55',
             'description' => 'required',
@@ -57,10 +55,8 @@ class AdminProductsController extends Controller
         //     $product_image->save();
         // }
         if(count($request->product_image)>0){
-            foreach($request->product_image as $image){
-
-                    // $image = $request->file('product_image');
-                    $img = time().'.'. $image->getClientOriginalExtension();
+            foreach($request->product_image as $key=>$image){
+                    $img = time().($key+1).'.'. $image->getClientOriginalExtension();
                     $location = public_path('images/products/'.$img);
                     Image::make($image)->save($location);
         

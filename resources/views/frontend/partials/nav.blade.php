@@ -17,10 +17,8 @@
                     <a class="nav-link" href="{{ route('product') }}">Product</a>
                 </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search Product" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button> -->
-                <input type="text" class="form-control" placeholder="Search Products" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <form class="form-inline my-2 my-lg-0" action="{!! route('search') !!}" method="get">
+                <input type="text" name="search" class="form-control" placeholder="Search Products" aria-label="Recipient's username" aria-describedby="button-addon2">
                     <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fa fa-search"></i></button>
                 </form>
             </div>

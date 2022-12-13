@@ -25,8 +25,10 @@ Route::get('/',[PagesController::class,'index'])->name('index');
 Route::get('/contact',[PagesController::class,'contact'])->name('contact');
 
 //Product Routes for our frontend Part
+
 Route::get('/product',[ProductsController::class,'index'])->name('product');
 Route::get('/product/{slug}',[ProductsController::class,'show'])->name('product.show');
+Route::get('/search',[PagesController::class,'search'])->name('search');
 
 //Admin Pages Routes
 

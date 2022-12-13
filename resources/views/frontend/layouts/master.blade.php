@@ -7,7 +7,9 @@
 
     @include('frontend.partials.style')
 
-    <title>Hello, world!</title>
+    <title>
+      @yield('title','Laravel E-commerce')
+    </title>
   </head>
   <body>
 <div class="wrapper mb-0">
